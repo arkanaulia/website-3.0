@@ -5,19 +5,25 @@ import { Container } from "../components/Container";
 import Landing from "../components/Landing";
 import Topnav from "../components/Topnav";
 import Botnav from "../components/Botnav";
+import { Suspense } from "react";
+
+// const Landing = React.lazy(() => import( "../components/Landing"));
+import Loading from "../components/Loading";
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Framer</title>
+        <title>arkanaulia</title>
         <meta name="description" content="Modules" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-
+      
       <div className="flex flex-col">
       <Topnav />
-      <Landing />
+      <Suspense fallback={<Loading />}  >
+        <Landing />
+      </Suspense>
       <Botnav />
 
       </div>

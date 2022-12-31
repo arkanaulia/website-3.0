@@ -2,7 +2,7 @@ import Idlelogo from "https://framer.com/m/idlelogo-TKFx.js@kofpiXmnXsVOMD84aYmV
 
 export default function Topnav() {
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col gap-0">
       <div className="w-max h-max bg-gray-500 z-10 opacity-30">
         <h2 className="p-2 ml-5 text-white text-xs ">psstt, try drag around and zoom out your browser ;D</h2>
       </div>
