@@ -1,0 +1,31 @@
+{
+    "name": "next-framer",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "clean": "rm -rf client.webpack.lock.data & rm -rf server.webpack.lock.data & rm -rf .next  & rm -rf next.lock"
+    },
+    "dependencies": {
+        "@rive-app/react-canvas": "^3.0.34",
+        "@splinetool/react-spline": "^2.2.5",
+        "@splinetool/runtime": "^0.9.174",
+        "framer": "^2.2.1",
+        "framer-motion": "^8.0.2",
+        "next": "^13.0.2",
+        "popmotion": "^11.0.5",
+        "react": "18.2.0",
+        "react-dom": "18.2.0",
+        "react-spline": "^1.2.1"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.13",
+        "eslint": "8.27.0",
+        "eslint-config-next": "13.0.2",
+        "postcss": "^8.4.20",
+        "tailwindcss": "^3.2.4"
+    }
+}
